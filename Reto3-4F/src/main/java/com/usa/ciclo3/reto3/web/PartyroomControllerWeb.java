@@ -34,7 +34,7 @@ public class PartyroomControllerWeb {
         return partyroomServices.getAll();
     }
 
-    @GetMapping("/{idPartyroom}")
+    @GetMapping("/{id}")
     public Optional<Partyroom> getPartyroom (@PathVariable("id") int id) {
 
         return partyroomServices.getPartyroom(id);
